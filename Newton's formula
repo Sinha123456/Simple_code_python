@@ -1,0 +1,20 @@
+class Newton:
+    def __init__(self, first_law, second_law, third_law):
+        self.first_law = first_law
+        self.second_law = second_law
+        self.third_law = third_law
+    def lawdetails(self):
+        return f" first law is {self.first_law}. second law is {self.second_law}. third law is {self.third_law}"
+
+
+    @staticmethod
+    def theoritical(str):
+        print(" Every object in a state of uniform motion will remain inthat state of motion"
+              "unless an externalforce acts on it. Force equals mass times acceleration."
+              "Every action there is an equal and opposite reaction" )
+        return "newton laws"
+law1 = Newton("v = u +at", "v^2 = u^2+2as", "s = ut+1/2at^2" )
+print(law1.lawdetails())
+
+print(law1.first_law)
+print(law1.theoritical("newton"))
