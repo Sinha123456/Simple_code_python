@@ -1,0 +1,22 @@
+# classmethod
+class Employee:
+    no_of_leaves = 10
+    def __init__(self, name, title, salary):
+        self.name = name
+        self.title = title
+        self.salary = salary
+    def emp_details(self):
+        return f" employee name is {self.name}. employee title is {self.title}. salary is {self.salary}"
+    @classmethod
+    def change_leaves(cls, new_leaves):
+        cls.no_of_leaves = new_leaves
+
+        
+neetu = Employee("Neetu", "Scientist", 5000)
+john = Employee("John", "Researcher", 4000)
+Employee.change_leaves = 18
+neetu.no_of_leaves = 12
+print(john.change_leaves)
+print(neetu.no_of_leaves)
+print(john.no_of_leaves)
+
