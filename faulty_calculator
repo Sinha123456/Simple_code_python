@@ -1,0 +1,21 @@
+print('Enter first number')
+num1 = int(input())
+print('Enter second number')
+num2 = int(input())
+print('Enter operator')
+operator = input()
+if num1 == 45 and num2 ==3 and operator == '*':
+    print('45*3 = 555')
+elif num1 == 56 and num2 == 9 and operator == '+':
+    print('77')
+elif num1 == 56 and num2 == 6 and operator == '/':
+    print('4')
+elif operator == '-':
+    sub = num1-num2
+    print('sub:', num1-num2)
+elif operator == '%':
+    print('mudlo:', num1%num2)
+elif operator == '/':
+    print('division:', num1/num2)
+else:
+    print('check error')
