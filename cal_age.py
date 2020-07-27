@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 '''age = int(input("enter your age: "))
 Name = str(input("enter your name: "))
 year = str((2020 - age) + 100)
@@ -20,3 +21,10 @@ plt.plot(data)'''
 #plt.plot(data)
 #plt.show()
 matplotlib.matplotlib_fname()
+=======
+age = int(input("enter your age: "))
+Name = str(input("enter your name: "))
+year = str((2020 - age) + 100)
+print("your name is", Name + "  and you are ", age, " years old")
+print(Name, "will be 100 years old in the year " + year)
+>>>>>>> 76463667a5375413f836dec914bf80028f25f286
