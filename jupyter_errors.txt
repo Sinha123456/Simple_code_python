@@ -1,0 +1,14 @@
+When you get error while opening jupyter notebook, that would the error:
+
+error:  type object 'IOLoop' has no attribute
+initialized'
+
+Here is the problem why it's happened:
+I was trying to open jupyter notebook but I could'nt open it. I tried many options
+like changed the environment variables, it's path etc. Finally I realized that two days ago I put command on Anaconda prompt:
+conda update --all
+
+Here is the solution to solve the problem:
+That was the reason I couldn't open the jupyter notebook. In updating conda they don't have jupyter notebook, therefore, you have to use that command in order to use jupyter notebook.
+conda install -c anaconda pyzmq
+I solved my problem, I hope others can solve their problem as well.
